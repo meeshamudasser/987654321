@@ -6,21 +6,21 @@
     <body>
         <div class="wrapper">
         <h1>stopwatch</h1>
-        <p><span id="seconds">00</span>:<span id="miliseconds">00</span></p>
+        <p><span id="seconds">00</span>:<span id="milliseconds">00</span></p>
     <button id="button-start">start</button>
     <button id="button-stop">stop</button>
-    <button id="button-reset">reset</button>
+    <button id="button-restart">reset</button>
     <script>
         window.onload = function () {
-            var seconds = 00;
-            var miliseconds = 00;
-            var appendimiliseconds = document.getElementById("miliseconds");
+            var seconds = 0;
+            var milliseconds = 0;
+            var appendmilliseconds = document.getElementById("milliseconds");
             var appenSeconds = document.getElementById("seconds");
             var buttonstart = document.getElementById("button-start");
             var buttonstop = document.getElementById("button-stop");
             var buttonrestart = document.getElementById("button-restart");
-            var interval;
-            buttonStart.onclick = function () {
+            var Interval;
+            buttonstart.onclick = function () {
 
                     clearInterval(Interval);
                     Interval = setInterval(startTimer, 10);
